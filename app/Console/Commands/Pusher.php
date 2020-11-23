@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Symfony\Component\Process\Process;
 use Rollerworks\Component\Version\Version;
@@ -17,7 +18,7 @@ class Pusher extends Command
 
     protected $signature = 'push {--path=}';
 
-    protected $modules = ['Assets'];
+    protected $onlyModules = [];
 
     protected $commit;
 
@@ -25,7 +26,7 @@ class Pusher extends Command
     {
         $this->setCommit();
         $this->checkOptions();
-        foreach ($this->modules as $module) {
+        foreach ($this->getModules() as $module) {
             $this->setConfig($module);
             $this->gitAdd($module);
             $commited = $this->gitCommit($module);
@@ -226,5 +227,25 @@ class Pusher extends Command
         $path = $this->pathModule($module);
         $process = Process::fromShellCommandline('git push --tags', $path);
         $process->mustRun();
+    }
+
+    /**
+     * Get modules
+     *
+     * @return array
+     */
+    private function getModules()
+    {
+        if ($this->onlyModules){
+            return $this->onlyModules;
+        }
+
+        $path = $this->option('path');
+        $dirs = File::directories($path);
+        $modules = [];
+        foreach ($dirs as $dir){
+            array_push($modules, basename($dir));
+        }
+       return $modules;
     }
 }

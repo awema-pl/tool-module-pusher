@@ -129,7 +129,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Console/Commands" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Modules/Packaginator" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -153,11 +153,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606127503165</updated>
-      <workItem from="1606127504518" duration="4969000" />
+      <workItem from="1606127504518" duration="6466000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2423" y="357" width="424" height="484" key="FileChooserDialogImpl" timestamp="1606134346552">
+      <screen x="1680" y="0" width="1920" height="1200" />
+    </state>
+    <state x="2423" y="357" width="424" height="484" key="FileChooserDialogImpl/3600.330.1366.768/1680.0.1920.1200/0.82.1680.1050@1680.0.1920.1200" timestamp="1606134346552" />
   </component>
 </project>

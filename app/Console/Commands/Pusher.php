@@ -206,8 +206,8 @@ class Pusher extends Command
      */
     private function setCommit()
     {
-        $commit = $this->ask('What is the name of the commit?', '');
-        $message = $commit ? "Want to set the shift name to $commit?" : "Want to set the shift name to Module [name_module]?";
+        $commit = $this->ask('What is the name of the commit (set empty for the name "Module [name_module]")?', '');
+        $message = $commit ? "Want to set the shift name to $commit?" : "Want to set the shift name to \"Module [name_module]\"?";
         if ($this->confirm($message)) {
             $this->commit = $commit;
         } else {

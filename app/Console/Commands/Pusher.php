@@ -111,6 +111,7 @@ class Pusher extends Command
     private function gitCommit(string $module)
     {
         $path = $this->pathModule($module);
+        $commit =  $this->commit ?: "Module $module";
         $process = new Process([
             'git',
             'commit',
@@ -205,12 +206,9 @@ class Pusher extends Command
      */
     private function setCommit()
     {
-        $commit = $this->ask('What is the name of the commit?');
-        if (!trim($commit)){
-            $this->error('Not set commit');
-            dd();
-        }
-        if ($this->confirm("Want to set the shift name to $commit")) {
+        $commit = $this->ask('What is the name of the commit?', '');
+        $message = $commit ? "Want to set the shift name to $commit?" : "Want to set the shift name to Module [name_module]?";
+        if ($this->confirm($message)) {
             $this->commit = $commit;
         } else {
             dd();

@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a3bacc7-02f6-4a24-86a9-a864927df671" name="Default Changelist" comment="" />
+    <list default="true" id="0a3bacc7-02f6-4a24-86a9-a864927df671" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -154,6 +159,14 @@
       <option name="presentableId" value="Default" />
       <updated>1606127503165</updated>
       <workItem from="1606127504518" duration="6466000" />
+      <workItem from="1606135314202" duration="1142000" />
+      <workItem from="1606136545408" duration="1279000" />
+      <workItem from="1606137981817" duration="613000" />
+      <workItem from="1606141474205" duration="102000" />
+      <workItem from="1606141599389" duration="153000" />
+      <workItem from="1606168838901" duration="382000" />
+      <workItem from="1606205243480" duration="44000" />
+      <workItem from="1606343281387" duration="1116000" />
     </task>
     <servers />
   </component>
@@ -161,9 +174,9 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2423" y="357" width="424" height="484" key="FileChooserDialogImpl" timestamp="1606134346552">
+    <state x="2423" y="357" width="424" height="484" key="FileChooserDialogImpl" timestamp="1606380196781">
       <screen x="1680" y="0" width="1920" height="1200" />
     </state>
-    <state x="2423" y="357" width="424" height="484" key="FileChooserDialogImpl/3600.330.1366.768/1680.0.1920.1200/0.82.1680.1050@1680.0.1920.1200" timestamp="1606134346552" />
+    <state x="2423" y="357" width="424" height="484" key="FileChooserDialogImpl/3600.330.1366.768/1680.0.1920.1200/0.82.1680.1050@1680.0.1920.1200" timestamp="1606380196781" />
   </component>
 </project>

@@ -93,11 +93,7 @@ class Pusher extends Command
     private function gitAdd(string $module)
     {
         $path = $this->pathModule($module);
-        $process = new Process([
-            'git',
-            'add',
-            '.'
-        ], $path);
+        $process = Process::fromShellCommandline('git add .', $path);
         $process->mustRun();
         return !!$process->getOutput();
     }
@@ -116,7 +112,7 @@ class Pusher extends Command
             'git',
             'commit',
             '-m',
-           $this->commit,
+            $commit,
         ], $path);
         $process->run();
         $output = $process->getOutput();

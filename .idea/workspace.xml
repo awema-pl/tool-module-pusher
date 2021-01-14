@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a3bacc7-02f6-4a24-86a9-a864927df671" name="Default Changelist" comment="" />
+    <list default="true" id="0a3bacc7-02f6-4a24-86a9-a864927df671" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,7 +134,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Modules/Packaginator" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../BL EPlatforma" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -178,16 +185,35 @@
       <workItem from="1607203825492" duration="31000" />
       <workItem from="1607204624941" duration="172000" />
       <workItem from="1607205346212" duration="12000" />
+      <workItem from="1607205632001" duration="336000" />
+      <workItem from="1607207568646" duration="22000" />
+      <workItem from="1607208646578" duration="270000" />
+      <workItem from="1607327311401" duration="25000" />
+      <workItem from="1607339475688" duration="10000" />
+      <workItem from="1607339503127" duration="388000" />
+      <workItem from="1607343204767" duration="664000" />
+      <workItem from="1607424278104" duration="90000" />
+      <workItem from="1607627700906" duration="611000" />
+      <workItem from="1607784201188" duration="2863000" />
+      <workItem from="1607799626024" duration="620000" />
+      <workItem from="1607934921065" duration="2127000" />
+      <workItem from="1608134905575" duration="14000" />
+      <workItem from="1608135069236" duration="130000" />
+      <workItem from="1608309416119" duration="679000" />
+      <workItem from="1608715331355" duration="785000" />
+      <workItem from="1608717972349" duration="315000" />
+      <workItem from="1608740348917" duration="1150000" />
+      <workItem from="1608753693889" duration="18000" />
+      <workItem from="1610205869027" duration="198000" />
+      <workItem from="1610207256200" duration="604000" />
+      <workItem from="1610213722770" duration="694000" />
+      <workItem from="1610374297217" duration="610000" />
+      <workItem from="1610377513860" duration="814000" />
+      <workItem from="1610394693585" duration="22000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2423" y="357" width="424" height="484" key="FileChooserDialogImpl" timestamp="1606380196781">
-      <screen x="1680" y="0" width="1920" height="1200" />
-    </state>
-    <state x="2423" y="357" width="424" height="484" key="FileChooserDialogImpl/3600.330.1366.768/1680.0.1920.1200/0.82.1680.1050@1680.0.1920.1200" timestamp="1606380196781" />
   </component>
 </project>

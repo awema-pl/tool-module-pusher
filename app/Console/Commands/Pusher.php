@@ -16,7 +16,7 @@ class Pusher extends Command
     const NEXT_VERSION_MINOR = false;
     const NEXT_VERSION_PATCH = true;
 
-    protected $signature = 'push {--path=}';
+    protected $signature = 'push {--path=} {--tags}';
 
     protected $onlyModules = [];
 
@@ -37,6 +37,10 @@ class Pusher extends Command
                     $this->gitPushTags($module);
                 }
             }
+//            else if ($this->option('tags')){
+//                $this->gitTag($module);
+//                $this->gitPushTags($module);
+//            }
 
         }
     }

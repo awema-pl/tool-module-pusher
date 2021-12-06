@@ -11,7 +11,7 @@ use Rollerworks\Component\Version\Version;
 class Pusher extends Command
 {
     const AUTHOR_NAME = 'Karol Golec';
-    const AUTHOR_EMAIL = 'developer@awema.pl';
+    const AUTHOR_EMAIL = 'developerawema@gmail.com';
     const NEXT_VERSION_MAJOR = false;
     const NEXT_VERSION_MINOR = false;
     const NEXT_VERSION_PATCH = true;
@@ -28,6 +28,7 @@ class Pusher extends Command
         $this->checkOptions();
         foreach ($this->getModules() as $module) {
             $this->setConfig($module);
+            $this->info($this->pathModule($module));
             $this->gitAdd($module);
             $commited = $this->gitCommit($module);
             if ($commited) {
@@ -37,6 +38,7 @@ class Pusher extends Command
                     $this->gitPushTags($module);
                 }
             }
+            dd();
 //            else if ($this->option('tags')){
 //                $this->gitTag($module);
 //                $this->gitPushTags($module);
@@ -120,7 +122,7 @@ class Pusher extends Command
         ], $path);
         $process->run();
         $output = $process->getOutput();
-        return !Str::contains($output, 'nothing to commit, working tree clean');
+        return !Str::contains($output, 'nothing to commit, working tree clean') && !Str::contains($output, 'nic do złożenia, drzewo robocze czyste');
     }
 
     /**
@@ -210,8 +212,6 @@ class Pusher extends Command
         $message = $commit ? "Want to set the shift name to $commit?" : "Want to set the shift name to \"Module [name_module]\"?";
         if ($this->confirm($message)) {
             $this->commit = $commit;
-        } else {
-            dd();
         }
     }
 
